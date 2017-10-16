@@ -1,0 +1,30 @@
+<h2>Diretivas Customizadas - {{appName}}</h2>
+<h4 fundoAmarelo>
+  fundoAmarelo
+</h4>
+<br>
+<br>
+<h4 mouseAzul>
+  mouseAzul
+</h4>
+<br>
+<br>
+<h4 [highlight]="'red'" [colorDefault]="'#DAD8D8'">
+  [highlight]="'red'" [colorDefault]="'#DAD8D8'
+</h4>
+<br>
+<br>
+<button fundoAmarelo>OK</button>
+
+<br><br>
+
+<h4>*ngElse</h4>
+<div *ngIf="mostrarCursos" >
+  Mostrar cursos...
+</div>
+<div *ngElse="mostrarCursos">
+    Não existem cursos cadastrados!
+</div>
+
+
+<button (click)="clickMostrarCursos()">Alterar Cursos</button>

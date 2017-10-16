@@ -1,0 +1,13 @@
+<h4>Utilizando style binding</h4>
+<button
+  [style.background-color]="ativo ? 'grey' : 'white'"
+  [style.color]="ativo ? 'black' : 'olive'"
+  (click)="onClick()">Mudar status do botão</button>
+  <br>
+  <h4>Utilizando ngStyle</h4>
+  <button
+    [ngStyle]="{
+        'background-color' : (ativo ? 'grey' : 'white' ),
+        'color' : ( ativo ? 'black' : 'olive' )
+    }"
+    (click)="onClick()">Mudar status do botão</button>

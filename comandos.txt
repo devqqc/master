@@ -1,0 +1,9 @@
+install angular cli
+instal typescript
+npm install -g angular-cli
+
+ng new primeiro-projeto
+ng g c componente1 
+ng g m modulo_cursos
+ng serve 
+

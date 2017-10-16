@@ -1,0 +1,22 @@
+{{favorito}}
+<br>
+<h2>Usando class binding</h2>
+<h1>
+  <i class= "glyphicon" 
+    [class.glyphicon-star]="favorito" 
+    [class.glyphicon-star-empty]="!favorito"
+    (click)="favoritar()">
+  </i>
+
+</h1>
+<br>
+<h2>Usando ngClass</h2>
+<h1>
+  <i class= "glyphicon" 
+    (click)="favoritar()"
+    [ngClass]="{
+      'glyphicon-star' : favorito,
+      'glyphicon-star-empty' : !favorito
+    }">
+  </i>
+</h1>

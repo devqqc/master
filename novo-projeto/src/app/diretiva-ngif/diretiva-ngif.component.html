@@ -1,0 +1,12 @@
+<h4>*ngIf</h4>
+<div *ngIf="cursos.length == 0" >
+  Não existem cursos cadastrados!
+</div>
+<div *ngIf="cursos.length != 0">
+  Mostrar cursos...
+</div>
+
+<div [hidden]="mostrarCursos" >
+  Utilizando hidden
+</div>
+<button (click)="clickMostrarCursos()">Alternar hidden</button>

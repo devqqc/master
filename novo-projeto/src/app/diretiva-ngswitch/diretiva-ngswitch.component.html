@@ -1,0 +1,15 @@
+
+<p>{{tabSelecionada}}</p>
+
+<ol class="breadcrumb">
+  <li [class.destaque]="tabSelecionada == 'home'"><a (click)="tabSelecionada = 'home'">Home</a></li>
+  <li [class.destaque]="tabSelecionada == 'library'"><a (click)="tabSelecionada = 'library'">Library</a></li>
+  <li [class.destaque]="tabSelecionada == 'data'"><a (click)="tabSelecionada = 'data'">Data</a></li>
+</ol>
+
+
+<div class="container" [ngSwitch]="tabSelecionada" >
+  <p *ngSwitchCase="'home'">Home selecionada</p>
+  <p *ngSwitchCase="'library'">Library selecionada</p>
+  <p *ngSwitchCase="'data'">Data selecionada</p>
+</div>
