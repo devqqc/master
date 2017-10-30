@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Testes de funcionalidades Ionic!</h2>
+
+  <button ion-button color="primary" block (click)="enviarPush()">Push Notification</button>
+  <button ion-button color="primary" block (click)="compartilharImagem()">Share Image</button>
+  <button ion-button color="primary" block (click)="testarToast()">Toast Test</button>
+  <button ion-button color="primary" block (click)="verificarPermissaoCamera()">Verify Permission Camera</button>
+  <button ion-button color="primary" block (click)="solicitarpermissaoCamera()">Request Permission Camera</button>
+  <button ion-button color="primary" block (click)="abrirLeitorQrCode()">QrCode</button>
+  <button ion-button color="primary" block (click)="discarNumero()">Call Number</button>
+  <button ion-button color="primary" block (click)="navegarLocalizacao()">Navigate to location</button>
+  <button ion-button color="primary" block (click)="abrirConfiguracoesGPS()">Open settings</button>
+
+  <ion-label>Retorno</ion-label>
+  <p>{{retorno | json}}</p>
+</ion-content>
