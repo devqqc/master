@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button color="primary" (click)="enviarPush()" block>push</button>
+  <button ion-button color="primary" (click)="compartilharImagem()" block>share</button>
+  <button ion-button color="primary" (click)="enviarToast()" block>toast</button>
+  <button ion-button color="primary" (click)="abrirLeitorQrCode()" block>qrcode</button>
+  <button ion-button color="primary" (click)="discarNumero()" block>call number</button>
+  <button ion-button color="primary" (click)="navegarLocalizacao()" block>navigate</button>
+
+  <ion-label>Retorno</ion-label>
+  <p>{{retorno | json}}</p>
+</ion-content>
